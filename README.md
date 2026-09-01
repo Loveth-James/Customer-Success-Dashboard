@@ -18,7 +18,7 @@ This was mostly sorting and cross-referencing a handful of numbers across relate
 A relational dataset split across 4 related tables - Customers, Subscriptions, monthly Usage, and individual Support tickets, connected through a shared Customer ID. This is closer to what a real CS data setup looks like, where the answer to "how engaged is this customer" isn't sitting in one row; it has to be built from usage patterns over time and ticket history, joined back to who the customer actually is.
 
 ## Behind the dashboard (technical notes)
-One mistake I found and fixed along the way — I think this matters more than the finished charts, since it's the part where I actually had to understand what the data was telling me rather than trust the first number Power BI showed:
+One mistake I found and fixed along the way - I think this matters more than the finished charts, since it's the part where I actually had to understand what the data was telling me rather than trust the first number Power BI showed:
 
 **Sum vs. Average**. A chart was summing 12 months of adoption per customer instead of averaging them, producing numbers like 700+ instead of a sensible percentage.
 
